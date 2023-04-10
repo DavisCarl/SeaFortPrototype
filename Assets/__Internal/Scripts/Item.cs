@@ -5,10 +5,12 @@ using UnityEngine;
 public class Item : MonoBehaviour, Identifiable
 {
     #region Interfaces
+    [SerializeField]
+    private string id;
     public string ID
     {
-        get;
-        set;
+        get { return id; }
+        set { id = value; }
     }
     public string personalID
     {

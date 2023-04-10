@@ -69,7 +69,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0650a44a4d18e8849b445ec36fe59b2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ID: obsD
+  id: obsD
 --- !u!1 &8193996322021816538
 GameObject:
   m_ObjectHideFlags: 0

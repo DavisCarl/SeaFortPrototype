@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class Floor : MonoBehaviour, Identifiable
 {
+    [SerializeField]
+    private string id;
     public string ID
     {
-        get;
-        set;
+        get {return id; }
+        set { id = value; }
     }
     public string personalID
     {

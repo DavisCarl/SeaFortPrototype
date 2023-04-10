@@ -137,7 +137,7 @@ public class WorldRoot : MonoBehaviour
     {
         ClearWorld();
         List<SavePosData> data = JsonConvert.DeserializeObject<List<SavePosData>>(File.ReadAllText(savePath + "Floors.json"));
-        infoDict = JsonConvert.DeserializeObject<Dictionary<string, SaveInfoData>>(savePath + "Info.json");
+        infoDict = JsonConvert.DeserializeObject<Dictionary<string, SaveInfoData>>(File.ReadAllText(savePath + "Info.json"));
         foreach (SavePosData d in data)
         {
             var f = Instantiate(floorDict[d.ID]);
