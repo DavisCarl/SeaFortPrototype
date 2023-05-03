@@ -9,10 +9,13 @@ public class WorldRoot : MonoBehaviour
 {
     public float floorHeight;
     public string defaultFloor;
+    public string defaultPlayer;
+    public Vector3 spawnPoint;
     public string savePath = "/Saves/";
     private List<BuiltItem> builtItems = new List<BuiltItem>();
     private List<Item> items = new List<Item>();
     private List<Floor> floors = new List<Floor>();
+    private List<Player> players = new List<Player>();
     private Dictionary<string, BuiltItem> builtItemDict = new Dictionary<string, BuiltItem>();
     private Dictionary<string, Item> itemDict = new Dictionary<string, Item>();
     private Dictionary<string, Floor> floorDict = new Dictionary<string, Floor>();
@@ -46,7 +49,7 @@ public class WorldRoot : MonoBehaviour
             playerDict.Add(t.ID, t);
         }
     }
-
+    #region Save/Load
     private void ClearWorld()
     {
         foreach (var t in builtItems)
@@ -71,27 +74,27 @@ public class WorldRoot : MonoBehaviour
         ClearWorld();
         floors.Add(Instantiate(floorDict[defaultFloor]));
         floors[0].transform.parent = transform;
+        floors[0].transform.localPosition = Vector3.zero;
+        players.Add(Instantiate(playerDict[defaultPlayer]));
+        players[0].transform.parent = transform;
+        players[0].transform.position = spawnPoint;
     }
     public void Save()
     {
-        Save(builtItems);
-        Save(items);
-        Save(floors);
+        SaveObject ob = new SaveObject();
+        ob.builtItemData = Serialize(builtItems);
+        ob.itemData = Serialize(items);
+        ob.floorData = Serialize(floors);
+        
         infoDict = new Dictionary<string, SaveInfoData>();
         foreach (StoredData d in GetComponentsInChildren<StoredData>())
         {
             infoDict.Add(d.personalID, d.Save());
         }
-        Save(infoDict);
+        ob.infoData = JsonConvert.SerializeObject(infoDict);
+        File.WriteAllText(savePath + "MapData.json", JsonConvert.SerializeObject(ob));
     }
-    private void Save(List<BuiltItem> items)
-    {
-        File.WriteAllText(savePath + "BuiltItems.json", Serialize(items));
-    }
-    private void Save(Dictionary<string, SaveInfoData> info)
-    {
-        File.WriteAllText(savePath + "Info.json", JsonConvert.SerializeObject(info));
-    }
+
     public string Serialize(List<BuiltItem> items)
     {
         
@@ -103,10 +106,7 @@ public class WorldRoot : MonoBehaviour
         string output = JsonConvert.SerializeObject(data);
         return output;
     }
-    private void Save(List<Item> items)
-    {
-        File.WriteAllText(savePath + "Items.json", Serialize(items));
-    }
+
     public string Serialize(List<Item> items)
     {
 
@@ -118,10 +118,7 @@ public class WorldRoot : MonoBehaviour
         string output = JsonConvert.SerializeObject(data);
         return output;
     }
-    private void Save(List<Floor> items)
-    {
-        File.WriteAllText(savePath + "Floors.json", Serialize(items));
-    }
+
     public string Serialize(List<Floor> items)
     {
 
@@ -136,17 +133,21 @@ public class WorldRoot : MonoBehaviour
     public void Load()
     {
         ClearWorld();
-        List<SavePosData> data = JsonConvert.DeserializeObject<List<SavePosData>>(File.ReadAllText(savePath + "Floors.json"));
-        infoDict = JsonConvert.DeserializeObject<Dictionary<string, SaveInfoData>>(File.ReadAllText(savePath + "Info.json"));
-        foreach (SavePosData d in data)
+        var data = JsonConvert.DeserializeObject<SaveObject>(File.ReadAllText(savePath + "MapData.json"));
+        List<SavePosData> dataList = JsonConvert.DeserializeObject<List<SavePosData>>(data.floorData);
+        infoDict = JsonConvert.DeserializeObject<Dictionary<string, SaveInfoData>>(data.infoData);
+        players.Add(Instantiate(playerDict[defaultPlayer]));
+        players[0].transform.parent = transform;
+        players[0].transform.position = spawnPoint;
+        foreach (SavePosData d in dataList)
         {
             var f = Instantiate(floorDict[d.ID]);
             floors.Add(f);
             f.transform.parent = transform;
             f.transform.SetPositionAndRotation(d.ToVector(), d.ToQuaternion());
          }
-        data = JsonConvert.DeserializeObject<List<SavePosData>>(File.ReadAllText(savePath + "Items.json"));
-        foreach (SavePosData d in data)
+        dataList = JsonConvert.DeserializeObject<List<SavePosData>>(data.itemData);
+        foreach (SavePosData d in dataList)
         {
             var f = Instantiate(itemDict[d.ID]);
             items.Add(f);
@@ -155,8 +156,8 @@ public class WorldRoot : MonoBehaviour
             f.transform.SetPositionAndRotation(d.ToVector(), d.ToQuaternion());
             f.personalID = d.personalID;
         }
-        data = JsonConvert.DeserializeObject<List<SavePosData>>(File.ReadAllText(savePath + "BuiltItems.json"));
-        foreach (SavePosData d in data)
+        dataList = JsonConvert.DeserializeObject<List<SavePosData>>(data.builtItemData);
+        foreach (SavePosData d in dataList)
         {
             var f = Instantiate(builtItemDict[d.ID]);
             builtItems.Add(f);
@@ -165,5 +166,5 @@ public class WorldRoot : MonoBehaviour
             f.personalID = d.personalID;
         }
     }
-
+    #endregion
 }
