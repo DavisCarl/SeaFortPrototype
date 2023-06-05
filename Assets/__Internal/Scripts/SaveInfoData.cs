@@ -5,16 +5,14 @@ using UnityEngine;
 public class SaveInfoData
 {
     public string personalID;
-    public Dictionary<string, float> floats;
-    public Dictionary<string, int> ints;
+    public string serializedData;
     public SaveInfoData()
     {
     }
 
-    public SaveInfoData(string personalID, Dictionary<string, float> floats, Dictionary<string, int> ints)
+    public SaveInfoData(string personalID, string data)
     {
         this.personalID = personalID;
-        this.floats = floats;
-        this.ints = ints;
+        this.serializedData = data;
     }
 }

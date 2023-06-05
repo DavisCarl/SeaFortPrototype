@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1465133544952353082}
   - component: {fileID: 5153007170727243278}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BaseCube
-  m_TagString: Untagged
+  m_TagString: Table
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45,6 +45,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e42405df13322b409f20fdd14f7b2b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  humanName: Cube
+  buildSurface: Wall
   id: baseCube
 --- !u!1 &7912133605383039514
 GameObject:
@@ -58,7 +60,7 @@ GameObject:
   - component: {fileID: 7834674006021956680}
   - component: {fileID: 8343863523737092623}
   - component: {fileID: 8423860525450781940}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}

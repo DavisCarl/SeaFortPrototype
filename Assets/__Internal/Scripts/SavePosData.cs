@@ -10,6 +10,10 @@ public class Vector3Data
         y = inV.y;
         z = inV.z;
     }
+    public Vector3 ToVector3()
+    {
+        return new Vector3(x, y, z);
+    }
 }
 public class QuaternionData
 {
@@ -21,6 +25,7 @@ public class QuaternionData
         y = inV.y;
         z = inV.z;
     }
+    public Quaternion ToQuaternion() { return new Quaternion(x, y, z, w);}
 }
 
 public class SavePosData
@@ -29,16 +34,16 @@ public class SavePosData
     public QuaternionData rot;
     public string ID;
     public string personalID;
-    public Vector3 ToVector() { return new Vector3(pos.x, pos.y, pos.z); }
-    public Quaternion ToQuaternion() { return new Quaternion(rot.x, rot.y, rot.z, rot.w); }
-    public SavePosData(Identifiable i)
+    public Vector3 ToVector() { return pos.ToVector3(); }
+    public Quaternion ToQuaternion() { return rot.ToQuaternion(); }
+    public SavePosData(IIdentifiable i)
     {
         pos = new Vector3Data(i.Transform.position);
         rot = new QuaternionData(i.Transform.rotation);
         ID = i.ID;
-        personalID = i.ID;
+        personalID = i.personalID;
     }
-    
+
 
     public SavePosData(Vector3Data pos, QuaternionData rot, string iD)
     {

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1397593042560709243}
   - component: {fileID: 114606249316904127}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ObservationPlatform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82,7 +82,7 @@ GameObject:
   - component: {fileID: 7110158088063160059}
   - component: {fileID: 6106216595035389325}
   - component: {fileID: 2078747399472378633}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Quad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -227,6 +227,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall_single (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8caefa743132e704a97a565195dda160, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 8caefa743132e704a97a565195dda160, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8caefa743132e704a97a565195dda160, type: 3}
 --- !u!4 &491796801682095522 stripped
@@ -292,6 +300,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6e915adf757852c428b08f2b80ec0a99, type: 3}
       propertyPath: m_Name
       value: walkway_single (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6e915adf757852c428b08f2b80ec0a99, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 6e915adf757852c428b08f2b80ec0a99, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e915adf757852c428b08f2b80ec0a99, type: 3}
@@ -359,6 +375,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: walkway_single (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6e915adf757852c428b08f2b80ec0a99, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 6e915adf757852c428b08f2b80ec0a99, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e915adf757852c428b08f2b80ec0a99, type: 3}
 --- !u!4 &1484549210279432877 stripped
@@ -424,6 +448,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 53b5a3f8828ea634abc8b3a290f62fc2, type: 3}
       propertyPath: m_Name
       value: walkway_corner
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 53b5a3f8828ea634abc8b3a290f62fc2, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 53b5a3f8828ea634abc8b3a290f62fc2, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53b5a3f8828ea634abc8b3a290f62fc2, type: 3}
@@ -491,6 +523,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: walkway_single
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6e915adf757852c428b08f2b80ec0a99, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 6e915adf757852c428b08f2b80ec0a99, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e915adf757852c428b08f2b80ec0a99, type: 3}
 --- !u!4 &1867174217666967294 stripped
@@ -556,6 +596,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 53b5a3f8828ea634abc8b3a290f62fc2, type: 3}
       propertyPath: m_Name
       value: walkway_corner (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 53b5a3f8828ea634abc8b3a290f62fc2, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 53b5a3f8828ea634abc8b3a290f62fc2, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53b5a3f8828ea634abc8b3a290f62fc2, type: 3}
@@ -623,6 +671,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall_single_door
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 29dd3e7358ba71b4c8d19fb3c538d768, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 29dd3e7358ba71b4c8d19fb3c538d768, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29dd3e7358ba71b4c8d19fb3c538d768, type: 3}
 --- !u!4 &2970695338296158927 stripped
@@ -688,6 +744,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6e915adf757852c428b08f2b80ec0a99, type: 3}
       propertyPath: m_Name
       value: walkway_single (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6e915adf757852c428b08f2b80ec0a99, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 6e915adf757852c428b08f2b80ec0a99, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e915adf757852c428b08f2b80ec0a99, type: 3}
@@ -755,6 +819,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: walkway_single (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6e915adf757852c428b08f2b80ec0a99, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 6e915adf757852c428b08f2b80ec0a99, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e915adf757852c428b08f2b80ec0a99, type: 3}
 --- !u!4 &4510439372968000491 stripped
@@ -820,6 +892,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6e915adf757852c428b08f2b80ec0a99, type: 3}
       propertyPath: m_Name
       value: walkway_single (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6e915adf757852c428b08f2b80ec0a99, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 6e915adf757852c428b08f2b80ec0a99, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e915adf757852c428b08f2b80ec0a99, type: 3}
@@ -887,6 +967,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: walkway_single (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6e915adf757852c428b08f2b80ec0a99, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 6e915adf757852c428b08f2b80ec0a99, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e915adf757852c428b08f2b80ec0a99, type: 3}
 --- !u!4 &4796021825242331290 stripped
@@ -952,6 +1040,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 53b5a3f8828ea634abc8b3a290f62fc2, type: 3}
       propertyPath: m_Name
       value: walkway_corner (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 53b5a3f8828ea634abc8b3a290f62fc2, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 53b5a3f8828ea634abc8b3a290f62fc2, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53b5a3f8828ea634abc8b3a290f62fc2, type: 3}
@@ -1019,6 +1115,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: walkway_single (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6e915adf757852c428b08f2b80ec0a99, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 6e915adf757852c428b08f2b80ec0a99, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e915adf757852c428b08f2b80ec0a99, type: 3}
 --- !u!4 &4772661004942614139 stripped
@@ -1084,6 +1188,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 46a5bfc8bd219e041b9b0197cdb537be, type: 3}
       propertyPath: m_Name
       value: wall_corner_wndows (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 46a5bfc8bd219e041b9b0197cdb537be, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 46a5bfc8bd219e041b9b0197cdb537be, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46a5bfc8bd219e041b9b0197cdb537be, type: 3}
@@ -1151,6 +1263,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: walkway_single
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6e915adf757852c428b08f2b80ec0a99, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 6e915adf757852c428b08f2b80ec0a99, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e915adf757852c428b08f2b80ec0a99, type: 3}
 --- !u!4 &6725512396846269445 stripped
@@ -1216,6 +1336,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6e915adf757852c428b08f2b80ec0a99, type: 3}
       propertyPath: m_Name
       value: walkway_single (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6e915adf757852c428b08f2b80ec0a99, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 6e915adf757852c428b08f2b80ec0a99, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e915adf757852c428b08f2b80ec0a99, type: 3}
@@ -1283,6 +1411,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall_corner_wndows
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 46a5bfc8bd219e041b9b0197cdb537be, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 46a5bfc8bd219e041b9b0197cdb537be, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46a5bfc8bd219e041b9b0197cdb537be, type: 3}
 --- !u!4 &6456763193595796093 stripped
@@ -1348,6 +1484,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6e915adf757852c428b08f2b80ec0a99, type: 3}
       propertyPath: m_Name
       value: walkway_single (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6e915adf757852c428b08f2b80ec0a99, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 6e915adf757852c428b08f2b80ec0a99, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e915adf757852c428b08f2b80ec0a99, type: 3}
@@ -1415,6 +1559,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall_single (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8caefa743132e704a97a565195dda160, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 8caefa743132e704a97a565195dda160, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8caefa743132e704a97a565195dda160, type: 3}
 --- !u!4 &7053834456506959851 stripped
@@ -1480,6 +1632,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 46a5bfc8bd219e041b9b0197cdb537be, type: 3}
       propertyPath: m_Name
       value: wall_corner_wndows (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 46a5bfc8bd219e041b9b0197cdb537be, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 46a5bfc8bd219e041b9b0197cdb537be, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46a5bfc8bd219e041b9b0197cdb537be, type: 3}
@@ -1547,6 +1707,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: walkway_corner (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 53b5a3f8828ea634abc8b3a290f62fc2, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 53b5a3f8828ea634abc8b3a290f62fc2, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53b5a3f8828ea634abc8b3a290f62fc2, type: 3}
 --- !u!4 &8976808885081677453 stripped
@@ -1612,6 +1780,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6e915adf757852c428b08f2b80ec0a99, type: 3}
       propertyPath: m_Name
       value: walkway_single (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6e915adf757852c428b08f2b80ec0a99, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 6e915adf757852c428b08f2b80ec0a99, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e915adf757852c428b08f2b80ec0a99, type: 3}
@@ -1679,6 +1855,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall_single
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8caefa743132e704a97a565195dda160, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 8caefa743132e704a97a565195dda160, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8caefa743132e704a97a565195dda160, type: 3}
 --- !u!4 &8892953154749337130 stripped
@@ -1744,6 +1928,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 46a5bfc8bd219e041b9b0197cdb537be, type: 3}
       propertyPath: m_Name
       value: wall_corner_wndows (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 46a5bfc8bd219e041b9b0197cdb537be, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 46a5bfc8bd219e041b9b0197cdb537be, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46a5bfc8bd219e041b9b0197cdb537be, type: 3}

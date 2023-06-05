@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Wall
+  - Floor
+  - Table
+  - Desk
+  - Shelf
+  - Ceiling
   layers:
   - Default
   - TransparentFX
@@ -11,13 +17,13 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Items
+  - BuiltItems
+  - Players
+  - Floors
+  - Walls
+  - Buoyancy
+  - Projectile
   - 
   - 
   - 

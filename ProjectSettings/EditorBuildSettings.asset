@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/__Internal/Scenes/BuoyancyTest.unity
+    guid: a2f53fc0bf053b347a48fc57bae3b7b0
+  - enabled: 1
+    path: Assets/__Internal/Scenes/BaseSceneExt.unity
+    guid: 24974509740d36d40821cdcf8cb9e7b4
+  - enabled: 1
+    path: Assets/__Internal/Scenes/BaseShipExt.unity
+    guid: 412937c444298fd4d857bdd1e4acb189
   m_configObjects: {}
