@@ -1044,7 +1044,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2121972451425764170}
   m_LocalRotation: {x: 0.6427876, y: 0, z: 0, w: 0.7660445}
-  m_LocalPosition: {x: 1.5, y: 1.7999992, z: 14}
+  m_LocalPosition: {x: 4, y: 1.7999992, z: 14}
   m_LocalScale: {x: 4, y: 4, z: 4}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1240,7 +1240,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2121972451779119018}
   m_LocalRotation: {x: 0.6427876, y: 0, z: 0, w: 0.7660445}
-  m_LocalPosition: {x: -1.5, y: 1.8, z: 14}
+  m_LocalPosition: {x: -4, y: 1.8, z: 14}
   m_LocalScale: {x: 4, y: 4, z: 4}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1628,7 +1628,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2121972452404306119}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 2, z: 10}
+  m_LocalPosition: {x: 0, y: 0.8, z: 15.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1786,7 +1786,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3273366861160076165}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Thruster
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2210,7 +2210,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3273366862266562566}
   - component: {fileID: 3273366862266562565}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -2400,7 +2400,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3273366862404010508}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2432,7 +2432,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3273366862433387052}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2698,7 +2698,7 @@ GameObject:
   - component: {fileID: 6069002544514499910}
   - component: {fileID: 6069002544514499911}
   - component: {fileID: 3273366862330550772}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: TrawlerBuoyancy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2712,7 +2712,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6069002544514499904}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 19, z: 15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2734,7 +2734,7 @@ Rigidbody:
   m_GameObject: {fileID: 6069002544514499904}
   serializedVersion: 2
   m_Mass: 2500
-  m_Drag: 1
+  m_Drag: 0.1
   m_AngularDrag: 2
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -2754,11 +2754,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraJoint: {fileID: 3273366862404010508}
-  force: 300
+  forwardForce: 100
+  torqueForce: 1200
   playerBody: {fileID: 6069002544514499911}
   maxSpeed: 20
   lookSpeed: 3
   deadZone: 15
+  xLimits: {x: 10, y: 90}
   cam: {fileID: 3273366862266562565}
   thruster: {fileID: 3273366861160076165}
 --- !u!1 &8722436120703247592
